@@ -5,7 +5,7 @@ class LimitSizeStream extends stream.Transform {
   constructor(options) {
     super({
       ...options,
-      encoding: options.encoding || 'utf-8'
+      encoding: options.encoding || 'utf-8',
     });
     this.limit = options.limit;
     this.dataLength = 0;
